@@ -736,25 +736,7 @@ export default function InvoiceProcessor() {
           </Card>
         )}
 
-        {/* Instructions */}
-        <Alert className="mb-4">
-          <AlertCircle className="h-4 w-4" />
-          <AlertDescription>
-            <strong>Instructions:</strong> Upload multiple Excel invoice files containing invoice data with columns like Invoice No, Date, NTN, Name, Quantity, etc. 
-            The system will automatically parse the files and generate a consolidated report in the same format as the sample report.
-          </AlertDescription>
-        </Alert>
-
-        {/* Debug Panel */}
-        {debugMode && (
-          <Alert className="mb-4 border-blue-200 bg-blue-50">
-            <AlertCircle className="h-4 w-4 text-blue-600" />
-            <AlertDescription className="text-blue-800">
-              <strong>Debug Mode Active:</strong> Check the browser console (F12) for detailed parsing information. 
-              This will help identify any issues with your Excel file structure.
-            </AlertDescription>
-          </Alert>
-        )}
+      
       </div>
     </div>
   );
